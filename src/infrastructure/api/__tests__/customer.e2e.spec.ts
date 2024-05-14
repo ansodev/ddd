@@ -71,6 +71,9 @@ describe("Customer E2E", () => {
     const customer = listResponse.body.customers[0];
     expect(customer.name).toBe("John Doe");
     expect(customer.address.street).toBe("Main Street");
+    const customer2 = listResponse.body.customers[1];
+    expect(customer.name).toBe("John Doe");
+    expect(customer.address.street).toBe("Main Street");
   });
 
   it("should update a customer", async () => {
